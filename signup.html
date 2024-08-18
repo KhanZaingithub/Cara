@@ -19,32 +19,30 @@
                 </div>
                 <div class="form">
                     <h1 class="heading">
-                        Welcome! Please log in to <br />
-                        <span class="position-relative">access your account.
+                        <span class="position-relative">Registered Now
                             <img class="position-absolute img-fluid" src="sgdb.svg" alt="" /></span>
                     </h1>
                     <p class="new-signup">
-                        New to Cara? <a href="signup.html">Signup</a>
+                        Already have an account? <a href="login.html">login</a>
                     </p>
-                    <form class="row g-3">
-                        <p class="incorrect">Email and Password is incorrect</p>
+                    <form class="row g-3" action="cara/login/login.json" method="get">
                         <div class="col">
                             <label for="validationDefault01" class="form-label">Email</label>
-                            <input type="email" class="form-control email" id="validationDefault01"
+                            <input name="email" type="email" class="form-control email" id="validationDefault01"
                                 placeholder="Enter Email" required />
                         </div>
 
                         <div class="col-12">
-                            <label for="validationDefault03" class="form-label">Password</label>
-                            <input type="text" class="form-control password" id="validationDefault03"
+                            <label for="validationDefault02" class="form-label">Password</label>
+                            <input name="password" type="text" class="form-control password" id="validationDefault02"
                                 placeholder="Enter Password" required />
                         </div>
-
                         <div class="col-12">
-                            <div class="forgot">
-                                <a href="forgot.html">Forgot Password?</a>
-                            </div>
+                            <label for="validationDefault03" class="form-label">Password</label>
+                            <input type="text" class="form-control password" id="validationDefault03"
+                                placeholder="Confirm Password" required />
                         </div>
+                        <p id="invalid-password">password not match</p>
                         <div class="col-12">
                             <button class="btn js-submit" type="submit">Submit form</button>
                         </div>
@@ -56,7 +54,7 @@
             </div>
         </div>
     </div>
-    <script src="login.js"></script>
+    <script src="signup.js"></script>
 </body>
 
 </html>
