@@ -17,6 +17,7 @@ async function getDta() {
         else{
             event.preventDefault();
             showData();
+            console.log(formDetails)
             text.style.display = "none";
         }
     })
